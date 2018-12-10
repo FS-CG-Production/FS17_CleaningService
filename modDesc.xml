@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="39">
+    <author>CG-Production</author>
+    <version>1.0.0.0</version>
+
+    <title>
+        <en>Cleaning-Service</en>
+        <de>Reinigungs-Service</de>
+    </title>
+    <description>
+        <en><![CDATA[The cleaning service Mod adds the possibility to have your vehicles cleaned for a small amount. The price for a cleaning is calculated individually for each vehicle.]]></en>
+        <de><![CDATA[Der Reinigungs-Service Mod fügt die Möglichkeit hinzu deine Fahrzeuge für einen kleinen Betrag reinigen zu lassen. Der Preis für eine Reinigung wir für jedes Fahrzeug einzeln berechnet.]]></de>
+    </description>
+    
+    <l10n>
+        <text name="clean">
+            <en>Clean vehicle for %s€</en>
+            <de>Fahrzeug für %s€ reinigen</de>
+        </text>
+        <text name="input_Clean">
+            <en>Clean Vehicle</en>
+            <de>Fahrzeug putzen</de>
+        </text>
+    </l10n>
+
+    <inputBindings>
+        <input name="Clean" category="VEHICLE" key1="KEY_lalt KEY_x" key2="" button="" device="0" mouse=""/>
+    </inputBindings>
+
+    <extraSourceFiles>
+        <sourceFile filename="cleaningServiceEvents.lua" />
+        <sourceFile filename="cleaningService.lua" />
+    </extraSourceFiles>
+    
+    <iconFilename>icon.png</iconFilename>
+    <multiplayer supported="true" />
+</modDesc>
